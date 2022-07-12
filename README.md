@@ -3,7 +3,7 @@ This is my fourteenth challenge assignment for the University of Oregon Coding B
 
 .env file format: 
 ```
-DB_NAME="tech_blog"
+DB_NAME="tech_blog_db"
 DB_USER="your-mysql-username"
 DB_PW="your-mysql-password"
 ```
