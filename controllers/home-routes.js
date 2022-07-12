@@ -48,6 +48,7 @@ router.get("/", (req, res) => {
     });
 });
 
+// get one post for a homepage
 router.get("/post/:id", (req, res) => {
     Post.findOne({
         where: {
@@ -100,6 +101,7 @@ router.get("/post/:id", (req, res) => {
     });
 });
 
+// login 
 router.get("/login", (req, res) => {
     // if logged in, redirect to homepage
     if (req.session.loggedIn) {
