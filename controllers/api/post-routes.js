@@ -1,3 +1,4 @@
+// imports
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
 const { Post, User, Comment } = require("../../models");
@@ -9,3 +10,7 @@ router.get("/", (req, res) => {
 });
 
 // GET /1 one user's posts
+
+
+// exports
+module.exports = router;
