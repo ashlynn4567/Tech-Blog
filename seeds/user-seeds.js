@@ -13,7 +13,7 @@ for (let i = 0; i < 10; i++) {
 };
 
 // function that seeds user data
-const seedUsers = () => User.bulkCreate(userdata, { individualHooks: true });
+const seedUsers = () => User.bulkCreate(userData, { individualHooks: true });
 
 // exports 
 module.exports = seedUsers;

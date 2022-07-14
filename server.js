@@ -15,12 +15,22 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// set up handlebars template
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
+// more middleware functions
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public")));
+
 // configure session and connect to our sequelize db
 const sess = {
     secret: process.env.secret,
     // use cookies
     cookie: {},
     resave: false,
+    saveUninitialized: true, 
     store: new SequelizeStore({
         db: sequelize
     })
@@ -31,15 +41,6 @@ const sess = {
 app.use(session(sess));
 // after middleware, direct app to response routes in controllers
 app.use(routes);
-
-// set up handlebars template
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
-
-// more middleware functions
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {

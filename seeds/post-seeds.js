@@ -5,10 +5,10 @@ const faker = require("faker");
 const postData = [];
 
 for (let i = 0; i < 20; i++) {
-    // creates a 1 line title
-    const title = faker.lines(1);
-    // create a randomly generated paragraph 20 sentences or less
-    const body = faker.paragraph(Math.floor(Math.random() * 21));
+    // creates a random title 10 words or less
+    const title = faker.lorem.words(Math.floor(Math.random() * 11));
+    // create a randomly generated paragraph 300 words or less
+    const body = faker.lorem.words(Math.floor(Math.random() * 301));
     // pick one of the 10 randomly generated users
     const user_id = Math.floor(Math.random() * 11);
 

@@ -6,7 +6,7 @@ const { Model, DataTypes } = require("sequelize");
 class Comment extends Model { };
 
 // define table columns and configuration
-User.init(
+Comment.init(
     // table column definitions
     {
         id: {
