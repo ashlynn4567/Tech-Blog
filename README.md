@@ -23,6 +23,7 @@ Follow [this link]([insert later]) to view and use our site!
 ## To-Do:
 
 - npm init and double check all dependencies. Check that seed and start script are correct. 
+- Add secret to .env. Also add secret to deep thoughts .env
 - Test all functionality.
 - CSS Stylesheets and Handlebars adjustments
 - Utilizing more backend routes on the front-end
