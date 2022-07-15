@@ -60,16 +60,16 @@ router.get("/:id", (req, res) => {
     });
 });
 
-// POST /api/users (create a user)
+// POST /api/users (create a user) (signup)
 router.post("/", (req, res) => {
     User.create({
         username: req.body.username,
+        email: req.body.email,
         password: req.body.password, 
     })
     .then(userData => {
         req.session.save(() => {
             req.session.user_id = userData.id;
-            req.session.username = userData.username;
             req.session.loggedIn = true;
 
             res.json(userData);
