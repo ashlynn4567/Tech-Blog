@@ -37,11 +37,6 @@ button:hover {
   background-color: #3486eb;
 }
 
-.post-list {
-  margin: 0;
-  padding: 0;
-}
-
 textarea,
 input {
   padding: 0.5%;
@@ -89,27 +84,29 @@ header h1 {
   font-size: 1em;
 }
 
+h1,
+h2, 
+h3, 
+h5, 
+h6,
+form, 
+div.text,
+div.meta,
+a.post {
+  margin-left: 1%;
+}
+
+h5, h6 {
+color: rgb(100, 100, 100);  
+}
+
+nav {
+  margin: 0.5% 1.5% 0 0;
+}
+
 main {
   flex: 1;
   padding: 2% 4%;
-}
-
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #225ca3;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color 0.1s;
-  margin-left: 16px;
-}
-
-.btn-no-style:hover {
-  background: none;
-  color: #3486eb;
 }
 
 .delete-post-btn {
@@ -131,25 +128,17 @@ main {
   color: #7d7d7d;
 }
 
-.edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
-}
-
 .comment-form {
   margin-bottom: 5%;
 }
 
+.comments {
+  margin-top: 1%;
+  background-color: whitesmoke;
+}
+
 .comment {
+  margin-top: 0.5%;
   padding: 1%;
   margin-bottom: 1%;
 }
@@ -162,6 +151,53 @@ main {
   font-size: 90%;
   margin-bottom: 0.5%;
   opacity: 0.6;
+}
+
+#create-comment {
+  margin-top: 0.75%;
+  width: 18%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.text {
+  font-weight: 600;
+}
+
+#login-btn,
+#signup-btn {
+  margin-bottom: 12%;
+}
+
+#post-body,
+#edit-body {
+  width: 25%;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;  
+}
+
+#your-posts {
+  margin-top: 1%;
+}
+
+#create-post {
+  margin-bottom: 1%;
+}
+
+.your-posts {
+  background-color: whitesmoke;
+}
+
+.post-preview {
+  margin-top: 1%;
+}
+
+#edit-post {
+  margin-bottom: 1%;
 }
 
 .new-post-form input {
@@ -178,110 +214,4 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
-}
-
-/************************************************/
-
-/* space header */
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: lightgray;
-  margin-bottom: 1%;
-  padding: 0.25% 0;
-}
-
-/* space nav bar */
-nav {
-  margin: 0.5% 1.5% 0 0;
-}
-
-/* create space left of the elements */
-h1,
-h2, 
-h3, 
-h5, 
-h6,
-form, 
-div.text,
-div.meta,
-a.post {
-  margin-left: 1%;
-}
-
-/* make smaller headers a lighter color */
-h5, h6 {
-color: rgb(100, 100, 100);  
-}
-
-/* put space between posts */
-.post-preview {
-  margin-top: 1%;
-}
-
-/* space and add color to comment section */
-.comments {
-  margin-top: 1%;
-  background-color: whitesmoke;
-}
-
-/* put space between comments */
-.comment {
-  margin-top: 0.5%;
-}
-
-/* make comment text bold */
-.text {
-  font-weight: 600;
-}
-
-/* create space between buttons and forms */
-#login-btn,
-#signup-btn {
-  margin-bottom: 12%;
-}
-
-/* style comment form box */
-#create-comment {
-  margin-top: 0.75%;
-  width: 18%;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-}
-
-/* style post text form box */
-#post-body,
-#edit-body {
-  width: 25%;
-  border-radius: 4px;
-  font-size: 16px;
-  resize: none;  
-}
-
-/* put space between create post form and your post section */
-#your-posts {
-  margin-top: 1%;
-}
-
-/* put space between create new post title and header */
-#create-post {
-  margin-bottom: 1%;
-}
-
-/* add background color to your posts section */
-.your-posts {
-  background-color: whitesmoke;
-}
-
-#edit-post {
-  margin-bottom: 1%;
-}
-/* put footer at bottom center of the page */
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 14.5%;
 }

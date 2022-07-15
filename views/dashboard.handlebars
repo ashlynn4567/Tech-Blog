@@ -23,7 +23,7 @@
         {{#each posts as |post|}}
         <article class="post">
             <div>
-                <h3>{{title}}</h3>
+                <h3 class="title">{{title}}</h3>
                 <h4>Posted by {{user.username}} on {{format_date created_at}}</h4>
                 <a id="edit-post" class="post btn btn-outline-secondary" href="dashboard/edit/{{post.id}}">Edit Post</a>
             </div>
