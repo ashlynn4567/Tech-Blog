@@ -22,8 +22,7 @@ Follow [this link]([insert later]) to view and use our site!
 
 ## To-Do:
 
-- npm init and double check all dependencies. Check that seed and start script are correct. 
-- Add secret to .env. Also add secret to deep thoughts .env
+- npm init and double check all dependencies. Check that seed and start script are correct.
 - Test all functionality.
 - CSS Stylesheets and Handlebars adjustments
 - Utilizing more backend routes on the front-end
@@ -57,22 +56,24 @@ This is how the front-end webpage appears to viewers. It is responsive, adapting
 
 To see all of the back-end functionality separate from the deployed page, you need to install it to your local machine. For instructions on how to do so, please see the [Installation](#installation) section.
 
-1. GET request to the api endpoint `localhost:3001/api/[insert later]` 
-2. GET request to the api endpoint `localhost:3001/api/[inser later]/[insert later]` 
+1. GET request to the api endpoint `localhost:3001/api/[insert later]`
+2. GET request to the api endpoint `localhost:3001/api/[inser later]/[insert later]`
 
 <p align="center">
 <img alt="[insert later]" src="./assets/images/pizza-hunt-demo-[insert later].gif"/>
 </p>
 
-3. POST request to the api endpoint `localhost:3001/api/[insert later]/`. 
-  ```
-  [insert later]
-  ```
+3. POST request to the api endpoint `localhost:3001/api/[insert later]/`.
 
-4. PUT request to the api endpoint `localhost:3001/api/[insert later]/[insert later]` 
-  ```
-  [insert later]
-  ```
+```
+[insert later]
+```
+
+4. PUT request to the api endpoint `localhost:3001/api/[insert later]/[insert later]`
+
+```
+[insert later]
+```
 
 5. DELETE request to the api endpoint `localhost:3001/api/[insert later]/[insert later]`
 
@@ -89,24 +90,31 @@ Although this application is deployed to a website, the front-end does not utili
 3. Once the repository has been cloned, navigate into the root directory of the application using the command `cd Pizza-Hunt`.
 4. Run the command `npm install` to install necessary packages and dependencies.
 5. This application relies on private enviromental variables. In the main directory of the application, create a `.env` file.
-  - The contents of your `.env` file should look like this, where [MySQL username] is your MySQL username, and [MySQL password] is your MySQL password:
-  ```
-  DB_NAME="tech_blog_db"
-  DB_USER="[MySQL username]"
-  DB_PW="[MySQL password]"
-  ```
-  - For example, if my username is `ashlynn4567` and my password is `password1234`, my `.env` file will look like the following:
-  ```
-  DB_NAME="tech_blog_db"
-  DB_USER="ashlynn4567"
-  DB_PW="password1234"
-  ```
+
+- The contents of your `.env` file should look like this, where [MySQL username] is your MySQL username, and [MySQL password] is your MySQL password:
+
+```
+DB_NAME="tech_blog_db"
+DB_USER="[MySQL username]"
+DB_PW="[MySQL password]"
+```
+
+- For example, if my username is `ashlynn4567` and my password is `password1234`, my `.env` file will look like the following:
+
+```
+DB_NAME="tech_blog_db"
+DB_USER="ashlynn4567"
+DB_PW="password1234"
+```
+
 6. Next, you will need to seed the data. Note: You must have MySQL installed on your computer in order to seed the data.
-  - Log in to MySQL in your command line with the command `mysql -u root -p`.
-  - Enter your login credentials.
-  - Type the command `source db/schema.sql`. This creates the schema for your database.
-  - Quit MySQL with the command `quit`.
-  - In the root directory of the application, enter the command `npm run seed` into your terminal. This will finish seeding your database based off of the models. 
+
+- Log in to MySQL in your command line with the command `mysql -u root -p`.
+- Enter your login credentials.
+- Type the command `source db/schema.sql`. This creates the schema for your database.
+- Quit MySQL with the command `quit`.
+- In the root directory of the application, enter the command `npm run seed` into your terminal. This will finish seeding your database based off of the models.
+
 5. Once the dependencies have been properly installed and your database has been seeded, enter the command `npm start` to initiate the application and start the connection to the database.
 
 For further help with installation, please refer to the below demonstration video.

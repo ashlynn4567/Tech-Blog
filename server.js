@@ -26,10 +26,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // configure session and connect to our sequelize db
 const sess = {
-    secret: process.env.secret,
+    secret: "secretidhere",
     // use cookies
     cookie: {},
-    resave: false,
+    resave: true,
     saveUninitialized: true, 
     store: new SequelizeStore({
         db: sequelize
