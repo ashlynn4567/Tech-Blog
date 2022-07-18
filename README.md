@@ -18,7 +18,7 @@ This is my fourteenth challenge assignment for the University of Oregon Coding B
 
 ## Deployed Site
 
-Follow [this link]([insert later]) to view and use our site!
+Follow [this link](https://secret-lowlands-95047.herokuapp.com/) to view and use our site!
 
 ## To-Do:
 

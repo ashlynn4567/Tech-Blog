@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 3001;
 // set up handlebars template
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
+app.set("views", "./views");
 
 // more middleware functions
 app.use(express.json());

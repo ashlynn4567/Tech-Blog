@@ -1,7 +1,11 @@
 // extracted global post id
-const postId = window.location.toString().split("/")[
+const postLocation = (window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
-];
+]);
+
+const postId = postLocation.toString().split("?")[0];
+
+console.log(postId);
 
 // edit post
 async function editPostHandler(event) {
@@ -10,6 +14,8 @@ async function editPostHandler(event) {
     const title = document.querySelector("input[name='post-title']").value.trim();
     const body = document.querySelector("textarea[name='post-body']").value;
 
+    console.log(title, body);
+    
     const response = await fetch(`/api/posts/${postId}`, {
         method: "PUT", 
         body: JSON.stringify({ title, body }),
