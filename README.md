@@ -27,7 +27,7 @@ This is how the front-end webpage appears to new viewers. It is responsive, adap
 <img alt="A screenshot of the homepage of Tech Blog. A list of posts are shown in the main portion of the screen. There are also links in the navigation bar show buttons for 'home,' a page that shows the most recent posts by users on the site, and 'login,' where users can go to either login with their existing credentials or sign up as a new user." src="./assets/images/tech-blog-screenshot.jpg"/>
 </p>
 
-To login or sign up, users must click the "login" button in the navigation bar. This brings them to a page where they can either enter their existing username and password to log in, or they can enter their username, email, and password to sign up for the site. Once they complete either the login or signup form, the user is brought to their dashboard. Signed-in users can see new buttons in the navbar - one for their dashboard, and one to logout.
+To login or sign up, users must click the "login" button in the navigation bar. This brings them to a page where they can either enter their existing username and password to log in, or they can enter their username, email, and password to sign up for the site. Once they complete either the login or signup form, the user is brought to their dashboard. Signed-in users can see new buttons in the navbar - one for their dashboard, and one to logout. Clicking the logout button will sign the user out of the site, making the dashboard page unavailable again. 
 
 <p align="center">
 <img alt="A demonstration gif showing a user signing up for the site. They are redirected to the user dashboard." src="./assets/images/tech-blog-demo.gif"/>
@@ -36,19 +36,19 @@ To login or sign up, users must click the "login" button in the navigation bar. 
 On the user's dashboard, they can view posts that they have created. There is also a form in which users can enter a title and text body to create a new blog post. After they submit hte form, the page redirects to show an updated dashboard displaying their new blog post.
 
 <p align="center">
-<img alt="A demonstration gif showing the user creating a new post and viewing it on their dashboard." src="./assets/images/tech-blog-demo-[insert later].gif"/> 
+<img alt="A demonstration gif showing the user creating a new post and viewing it on their dashboard." src="./assets/images/tech-blog-demo-2.gif"/> 
 </p>
 
-when clicking on existing post from dashboard, user can update or delete blog post. users can click on the logout option to be signed out of the site.
+The user's dashboard isn't just for viewing and creating posts, it is also a place where users can manage their posts. By clicking on the "edit post" button under one of their existing posts, users can edit the contents of that post. Clicking "save post" will redirect the user to an updated dashboard showing their updated post. Alternatively, if users select the "delete post" button, the page will redirect to an updated dashboard showing that the post has been removed.
 
 <p align="center">
-<img alt="[insert later]" src="./assets/images/tech-blog-demo-[insert later].gif"/> 
+<img alt="A demonstration gif showing hte user editing and deleting one of their own posts from the dashboard." src="./assets/images/tech-blog-demo-3.gif"/> 
 </p>
 
-from homepage: when clicking on a blog post, presented with title, contents, post creator's username, and date created for post. Also shows option to leave a comment. logged in users can create a comment and post. redirected to an updated page that displays the comment, date created, and creator's username.
+The homepage works a little differently than the user's dashboard. Here, users can view posts from other users. Each post lists the title, date created, and author of the post. If users click on the "view full post" button, they will be directed to that post's page. Here, users can view the full text contents of the post, as well as add any comments using the comment form. Users must be logged in to create a comment on a post. Once they submit their comment, the page is automatically redirected to an updated page showing the post and their new comment.
 
 <p align="center">
-<img alt="[insert later]" src="./assets/images/tech-blog-demo-[insert later].gif"/> 
+<img alt="A demonstration gif showing the user viewing posts on the homepage, clicking on one, and adding a new comment." src="./assets/images/tech-blog-demo-4.gif"/> 
 </p>
 
 ## Technologies
