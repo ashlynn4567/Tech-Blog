@@ -29,7 +29,7 @@ RUN /render/build-scripts/apply-buildpacks.py ${HEROKU_STACK}
 # add a Procfile that tells us what you need us to run.
 RUN if [[ -f /app/Procfile ]]; then \
   /render/build-scripts/create-process-types "/app/Procfile"; \
-fi;
+  fi;
 
 # For running the app, we use a clean base image and also one without Ubuntu development packages
 # https://devcenter.heroku.com/articles/heroku-20-stack#heroku-20-docker-image
@@ -45,14 +45,3 @@ COPY --from=builder --chown=1000:1000 /app /app/
 # of container-escape attack.
 USER 1000:1000
 WORKDIR /app
-
-# This sources all /app/.profile.d/*.sh files before process start.
-# These are created by buildpacks, and you probably don't have to worry about this.
-# https://devcenter.heroku.com/articles/buildpack-api#profile-d-scripts
-ENTRYPOINT [ "/render/setup-env" ]
-
-# 3. By default, we run the 'web' process type defined in the app's Procfile
-# You may override the process type that is run by replacing 'web' with another
-# process type name in the CMD line below. That process type must have been
-# defined in the app's Procfile during build.
-CMD [ "/render/process/web" ]
